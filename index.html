@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Style.css">
+  </head>
+  <body>
+      <h1 class="text-center">Bài tập thêm JS buổi 4</h1>
+    <div>
+        <div class="row">
+            <div class="bt col-12 text-center my-4">
+                <h3 class="my-3">Bài 1: Tìm ngày tháng năm</h3>
+                <div class="my-4 text-center">
+                    <input class="col-3" id="number_1" type="number" placeholder="ngày">
+                    <input class="col-3" id="number_2" type="number" placeholder="tháng">
+                    <input class="col-3" id="number_3" type="number" placeholder="năm">
+                    <button id="result_1_1" class="btn btn-primary col-3 my-2">Ngày tiếp theo</button>
+                    <button id="result_1_2" class="btn btn-primary col-3 my-2">Ngày trước</button>
+                </div>
+                <div id="bt_1"></div>
+            </div>
+            <div class="col-6 my-4">
+                <img class="img-fluid" src="./img/bai1.jpg" alt="">
+            </div>
+            <div class="col-6 my-4">
+                <img class="img-fluid" src="./img/bai1.1.jpg" alt="">
+            </div>
+            <hr>
+            <div class="bt col-4 text-center my-4">
+                <h3 class="my-3">Bài 2: Kiểm tra số ngày trong tháng</h3>
+                <div class="my-4 text-center">
+                    <input class="col-3" id="number_4" type="number" placeholder="tháng">
+                    <input class="col-3" id="number_5" type="number" placeholder="năm">
+                    <button id="result_2" class="btn btn-primary col-2">Kiểm tra</button>
+                </div>
+                <div id="bt_2"></div>
+            </div>
+            <div class="col-8 my-4">
+                <img class="img-fluid" src="./img/bai2.jpg" alt="">
+            </div>
+            <div class="bt col-4 text-center my-4">
+                <h3 class="my-3">Bài 3: Cách đọc số</h3>
+                <div class="my-4 text-center">
+                    <input class="col-2" id="number_6" type="number">
+                    <button id="result_3" class="btn btn-primary col-2">Cách đọc</button>
+                </div>
+                <div id="bt_3"></div>
+            </div>
+            <div class="col-8 my-4">
+                <img class="img-fluid" src="./img/bai3.jpg" alt="">
+            </div>
+            <hr>
+
+            <div class="bt col-4 text-center my-4">
+                <h3 class="my-3">Bài 4: Tọa độ nhà của sinh viên</h3>
+                <div class="my-4 text-center">
+                    <div class="bg-warning py-2">
+                        <p>Tọa độ của trường: Cybersoft</p>
+                        <div class="my-2">
+                            <span class="col-3">Tọa độ nhà: </span>
+                        <input class="col-3" id="kd_truong" type="number" placeholder="kinh độ">
+                        <input class="col-3" id="vd_truong" type="number" placeholder="vĩ độ">
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <p>Sinh viên 1:</p>
+                        <span class="col-3">Họ và tên</span>
+                        <input class="col-3" id="sv_1" type="text">
+                        <div class="my-2">
+                            <span class="col-3">Tọa độ nhà: </span>
+                        <input class="col-3" id="kd_1" type="number" placeholder="kinh độ">
+                        <input class="col-3" id="vd_1" type="number" placeholder="vĩ độ">
+                        </div>
+                    </div>
+                    <div class="bg-secondary py-2">
+                        <p>Sinh viên 2:</p>
+                        <span class="col-3">Họ và tên</span>
+                        <input class="col-3" id="sv_2" type="text">
+                        <div class="my-2">
+                            <span class="col-3">Tọa độ nhà: </span>
+                        <input class="col-3" id="kd_2" type="number" placeholder="kinh độ">
+                        <input class="col-3" id="vd_2" placeholder="vĩ độ">
+                        </div>
+                    </div>
+                    <div class="bg-info py-2">
+                        <p>Sinh viên 3:</p>
+                        <span class="col-3">Họ và tên</span>
+                        <input class="col-3" id="sv_3" type="text">
+                        <div class="my-2">
+                            <span class="col-3">Tọa độ nhà: </span>
+                        <input class="col-3" id="kd_3" type="number" placeholder="kinh độ">
+                        <input class="col-3" id="vd_3" placeholder="vĩ độ">
+                        </div>
+                    </div>
+                    <button id="result_4" class="btn btn-primary my-2">Kiểm tra khoảng cách</button>
+                </div>
+                <div id="bt_4"></div>
+            </div>
+            <div class="col-8">
+                <img class="img-fluid" src="./img/bai4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
